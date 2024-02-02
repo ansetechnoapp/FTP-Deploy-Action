@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -86,12 +86,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    - name: Use Node.js 16
-      uses: actions/setup-node@v2
+    - name: Use Node.js 18
+      uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: '18'
       
     - name: 🔨 Build Project
       run: |
@@ -116,7 +116,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -139,7 +139,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -161,7 +161,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
